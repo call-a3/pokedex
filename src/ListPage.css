@@ -1,0 +1,6 @@
+.ListPage-List {
+  overflow-y: auto;
+  overflow-x: hidden;
+  flex-grow: 1;
+  flex-shrink: 1;
+}

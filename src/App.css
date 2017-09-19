@@ -1,0 +1,124 @@
+a {
+  color: #8293c6;
+  font-weight: bold;
+}
+
+.App {
+  font-family: 'Titillium Web', sans-serif;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.App-content {
+  flex-grow: 1;
+  flex-shrink: 1;
+  position: relative;
+  background-color: #770000;
+}
+
+@media screen and (min-width: 1024px) {
+  .App-content {
+    display: flex;
+  }
+
+  .Header {
+    z-index: 3;
+    box-shadow: black 0 0 1em;
+  }
+
+  .ListPage {
+    flex: 0 0 300px;
+    z-index: 2;
+    box-shadow: black 0 0 1em;
+  }
+
+  .PokemonPage {
+    z-index: 1;
+    flex: 1 1 auto;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .App-content {
+    display: flex;
+  }
+
+  .Header {
+    z-index: 3;
+  }
+
+  .ListPage,
+  .PokemonPage {
+    background-color: #770000;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  .ListPage {
+    z-index: 1;
+  }
+
+  .PokemonPage {
+    z-index: 2;
+  }
+}
+
+.ListPage,
+.PokemonPage {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.Pokemon-type--Grass {
+  background-color: #78C850;
+}
+.Pokemon-type--Poison {
+  background-color: #A040A0;
+}
+.Pokemon-type--Fire {
+  background-color: #F08030;
+}
+.Pokemon-type--Flying {
+  background-color: #A890F0;
+}
+.Pokemon-type--Water {
+  background-color: #6890F0;
+}
+.Pokemon-type--Bug {
+  background-color: #A8B820;
+}
+.Pokemon-type--Normal {
+  background-color: #A8A878;
+}
+.Pokemon-type--Electric {
+  background-color: #F8D030;
+}
+.Pokemon-type--Ground {
+  background-color: #E0C068;
+}
+.Pokemon-type--Fighting {
+  background-color: #C03028;
+}
+.Pokemon-type--Psychic {
+  background-color: #F85888;
+}
+.Pokemon-type--Rock {
+  background-color: #B8A038;
+}
+.Pokemon-type--Ice {
+  background-color: #98D8D8;
+}
+.Pokemon-type--Ghost {
+  background-color: #705898;
+}
+.Pokemon-type--Dragon {
+  background-color: #7038F8;
+}

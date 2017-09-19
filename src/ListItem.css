@@ -1,0 +1,80 @@
+.ListItem {
+    display: flex;
+    color: white;
+    background-color: #770000;
+    border-bottom: 1px solid #420d0d;
+  }
+  
+  .ListItem-status {
+    position: relative;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 2rem;
+    line-height: 3rem;
+    display: block;
+    appearance: none;
+    cursor: pointer;
+  }
+  .ListItem-status:active,
+  .ListItem-status:focus {
+    outline: none;
+  }
+  .ListItem-status:before,
+  .ListItem-status:after {
+    border-right: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    position: absolute;
+    left: calc(50% - 0.35em);
+    top: calc(50% - 0.6em);
+    content: '';
+    width: 0.5em;
+    height: 1em;
+    transform: rotate(45deg);
+  }
+  .ListItem-status:before {
+    border-right-color: rgba(255, 255, 255, 0.1);
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+  }
+  .ListItem-status.ListItem-status--caught:before {
+    z-index: 2;
+    border-right-color: #00ce00;
+    border-bottom-color: #00ce00;
+  }
+  .ListItem-status.ListItem-status--caught:after {
+    z-index: 1;
+    border-right-color: rgba(0, 0, 0, 0.60);
+    border-bottom-color: rgba(0,0,0,0.6);
+    left: calc(50% - 0.25em);
+    top: calc(50% - 0.5em);
+  }
+  .ListItem-number {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 3rem;
+    line-height: 3rem;
+    cursor: pointer;
+  }
+  .ListItem-name {
+    flex-grow: 1;
+    flex-shrink: 1;
+    line-height: 3rem;
+    text-decoration: none;
+    font-weight: normal;
+    color: white;
+  }
+  .ListItem-types {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 4rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .ListItem-type,
+  .ListItem-subtype {
+    flex-shrink: 1;
+    flex-grow: 1;
+    line-height: 1.5rem;
+    font-size: 0.8em;
+  }
+  
