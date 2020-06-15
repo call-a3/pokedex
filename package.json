@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://labs.adriaan.me/pokedex",
   "dependencies": {
-    "history": "^4.6.3",
+    "history": "^5.0.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-redux": "^5.0.6",
